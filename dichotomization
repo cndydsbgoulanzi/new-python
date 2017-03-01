@@ -1,0 +1,19 @@
+#! /usr/bin/env python
+#def search(sequence, number, lower, upper):
+def search(sequence, number, lower=0, upper=None):
+    if upper is None: upper = len(sequence)-1
+#    if lower == upper:
+#        assert number == suquence[upper]
+#        return upper
+    else:
+        middle = (lower + upper) // 2
+        if number > suquence[middle]:
+            return search(sequence, number, middle+1, upper)
+        else:
+            return search(sequence, number, lower, upper)
+
+
+seq = [34,67,8,123,4,100,96]
+seq.sort()
+search(seq,34)
+search(seq,100)
