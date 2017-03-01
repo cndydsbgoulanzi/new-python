@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+#静态的菲波那契数列
+#fibs = [0, 1]
+#for i in range[8]
+#    fibs append(fibs[-2] + fibs[-1])
+
+#动态的菲波那契数列
+#fibs = [0, 1]
+#num = raw_input('How many Fibonacci numbers you want? ')
+#for i in range(num-2)
+#    fibs.append(fibs[-2] + fibs[-1])
+#print fibs
+
+#定义一个的菲波那契函数
+def fibs(num):
+    result = [0,1]
+    for i in range(num-2):
+        result.append(result[-2] + result[-1])
+    return result
